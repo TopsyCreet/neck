@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body >
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="mjolnir.glb" ios-src="mjolnir.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="0.1" environment-image="aircraft_workshop_01_1k.hdr" exposure="1">
+      <button class="Hotspot" slot="hotspot-1" data-position="0.5171529721520689m 0.7524133323838761m 0.03060711946244707m" data-normal="0.5225625728069258m 0.40409857002817984m 0.7507547556976157m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Display Stand</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="0.10467434772847795m -0.16436770950381918m 0.46335537342103733m" data-normal="0.02345442161492572m 0.16920364517567243m 0.9853019925718076m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Necklace</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="model-viewer.min.js"></script>
+  </body>
+</html>
